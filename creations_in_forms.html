@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creations in forms</title>
+</head>
+
+<body>
+    <form>
+        <h1>checkbox buttons</h1>
+        <label>Skills</label>
+        <br><br>
+        <!--checkbox is used to givebox shape selection option for the skills we can select multiple options in checkbox-->
+        <input type="checkbox" required id="java">
+        <label for="java">JAVA</label>
+        <br><br>
+
+        <input type="checkbox" id="mysql">
+        <label for="mysql">MySql</label>
+        <br><br>
+
+        <input type="checkbox" id="html">
+        <label for="html">HTML</label>
+        <br><br>
+
+        <input type="checkbox" id="css">
+        <label for="css">CSS</label>
+        <br><br>
+
+        <input type="checkbox" id="js">
+        <label for="js">JavaScript</label>
+        <br><br>
+
+        <button>Submit</button>
+    </form>
+
+    <h1>Radio buttons</h1>
+    <!--Radio buttons are used to select only one option-->
+    <form>
+        <label>Gender</label>
+        <br><br>
+        <input type="radio" required id="male" name="gender">
+        <label for="male">Male</label>
+        <input type="radio" required id="female" name="gender">
+        <label for="female">Female</label>
+        <input type="radio" required id="other" name="genderbb">
+        <label for="other">Others</label>
+        <br><br>
+        <button>Submit</button>
+    </form>
+
+    <h1>Datalist form (options)</h1>
+
+    <label>Year of graduation</label>
+    <input list="yog">
+    <datalist id="yog">
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+        <option>2024</option>
+    </datalist>
+</body>
+
+</html>

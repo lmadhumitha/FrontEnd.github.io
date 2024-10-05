@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student form</title>
+</head>
+
+<body>
+    <form action="actiontag.html">
+        <fieldset>
+            <legend>Person_details</legend>
+            <label for="fname">First Name</label>
+            <input type="text" required id="fname" pattern="[A-Za-z]{3,20}">
+            <br><br>
+            <label for="lname">Last Name</label>
+            <input type="text" required id="lname" pattern="[A-Za-z]{3,20}">
+            <br><br>
+            <label for="email">Email</label>
+            <input type="email" required id="email" pattern="[a-z0-9_.]+@[a-z]+.[a-z]{2,}">
+            <br><br>
+            <label for="num">Phone Number</label>
+            <input type="num" required id="num" pattern="[6-9]{1}[0-9]{9}">
+            <br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education_Details</legend>
+            <label>Department</label>
+            <br><br>
+            <input type="radio" id="cs" name="dept">
+            <label for="cs">Computer Science</label>
+            <input type="radio" id="ece" name="dept">
+            <label for="ece">Electronics and Communication</label>
+            <input type="radio" id="mech" name="dept">
+            <label for="mech">Mechanical</label>
+            <input type="radio" id="civil" name="dept">
+            <label for="civil">Civil</label>
+            <br><br>
+
+            <label for="yog">Year of Graduation</label>
+            <input list="yog">
+            <br><br>
+            <datalist id="yog">
+                <option>2020</option>
+                <option>2021</option>
+                <option>2022</option>
+                <option>2023</option>
+                <option>2024</option>
+            </datalist>
+
+            <label>Skills</label>
+            <br><br>
+            <input type="checkbox" id="java">
+            <label for="java">Java</label>
+            <br><br>
+            <input type="checkbox" id="sql">
+            <label for="sql">SQL</label>
+            <br><br>
+            <input type="checkbox" id="html">
+            <label for="html">HTML</label>
+            <br><br>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label>
+            <br><br>
+        </fieldset>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

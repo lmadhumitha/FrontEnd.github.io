@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form>
+        <label>Name</label>
+        <input type="text"><br><br>
+        <label>Email</label>
+        <input type="text"><br><br>
+        <label>Phone</label>
+        <input type="text"><br><br>
+        <input type="submit">
+    </form>
+
+    <hr>
+
+    <form action="https://tai.thetapacademy.com/assignments/6678f4e02f1a0dc865dc4bf1?viewMode=grid-view">
+        <!--when we entered the details and click on submit the above web page will be open-->
+        <label for="fname">FirstName</label>
+        <input type="text" required id="fname" pattern="[a-zA-Z]{3,10}">
+        <!--the pattern is for name validation name should be alphabets and minimum 3 characters and maximum 10 characters-->
+        <br><br>
+        <label for="lname">LastName</label>
+        <input type="text">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" required id="email" pattern="[a-z0-9_.]+@[a-z]{10}.[a-z]{3.}">
+        <br><br>
+        <label for="num">Phone</label>
+        <input type="text" required id="num" pattern="[6-9]{1}[0-9]{9}">
+        <!--the pattern is for phone number validation number should be start from 6 to 9 and after that should have 9 numbers from 0 to 9-->
+        <br><br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
